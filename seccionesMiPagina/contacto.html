@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prosto+One&display=swap');
+    </style>
+   
+    <title>CONTACTO</title>
+</head>
+<body>
+    <header>
+        <nav class="headerNav">
+            <a href="../index.html" class="scale"><img
+                    src="../recursos/logoF1.png"
+                    alt="Logo F1" class="logo"></a>
+            <ul class="header__menuNav">
+
+                <li class="scale"><a href="./historia.html">HISTORIA</a></li>
+                <li class="scale"><a href="./escuderias.html">ESCUDERIAS</a></li>
+                <li class="scale"><a href="./pilotos.html" >PILOTOS</a></li>
+                <li class="scale"><a href="./contacto.html" class="header__menuNav--activo">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form action="#" method="get" >
+            <section>
+                <h3>Nombre</h3>
+                <input type="text" name="nombre" class="cambioColor">
+
+            </section>
+            <section>
+                <h3>Apellido</h3>
+                <input type="text" name="apellido" class="cambioColor">
+            </section>
+           <section>
+               <h3>Email</h3>
+               <input type="email"  name="email" class="cambioColor">
+           </section>
+            <section>
+                <h3>Telefono</h3>
+                <input type="text"  name="tel" class="cambioColor">
+            </section>
+           <section>
+               <h3>Pais</h3>
+               <select name="pais" class="cambioColor">
+                   <option value="Argentina">ARGENTINA</option>
+                   <option value="Brasil">BRASIL</option>
+                   <option value="Chile">CHILE</option>
+                   <option value="Uruguay">URUGUAY</option>
+                   <option value="Peru">PERU</option>
+                   <option value="Otros">OTROS...</option>
+                </select>
+           </section>
+            <section>
+                <h3>Escriba su consulta</h3>
+                <textarea name="consulta" id="" cols="30" rows="10" class="cambioColor"></textarea>
+            </section>
+            
+           
+            <button class="botonFormulario cambioColor">Enviar Formulario</button>
+            <input type="reset" class="cambioColor">
+
+
+        </form>
+    </main>
+    <footer>
+        <section>
+
+            
+            <ul class="footer__listaRedes">
+                <li class="scale"><a href="https://www.instagram.com/f1/?next=%2F" target="_blank"><img
+                    src="../recursos/logoInsta.png"
+                            class="logoRedes"></a></li>
+                <li class="scale"><a href="https://twitter.com/F1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img
+                        src="../recursos/logoTwitter.png"
+                            class="logoRedes"></a></li>
+                <li class="scale"><a href="https://es-la.facebook.com/Formula1/" target="_blank"><img
+                    src="../recursos/logoFacebook.png"
+                            class="logoRedes"></a></li>
+
+            </ul>
+        </section>
+    </footer>
+</body>
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+</html>
