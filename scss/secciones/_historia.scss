@@ -1,0 +1,29 @@
+.imagen__f1Senna{
+    width: 98.5vw;
+    object-fit: cover;
+    height: 80vh;
+    
+    
+}
+.imagenes__Historia{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    padding: 2rem;
+}
+.imagen__f1Historia{
+    width: 31vw;
+    height: 40vh;
+    object-fit: cover;
+}
+@media(max-width:425px){
+    .imagen__f1Historia{
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+    .imagenes__Historia{
+        display: grid;
+        grid-template-rows:repeat(3,1fr) ;
+        grid-template-columns: none;
+        padding: 0;
+    }
+}

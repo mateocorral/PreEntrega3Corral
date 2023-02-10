@@ -1,0 +1,167 @@
+.main__divRedbull{
+    background-color: #08122b;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+h2{
+    font-family: 'Prosto One', cursive;
+    color: white;
+}
+.main__divFerrari{
+    background-color: #EF1A2D;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divMercedes{
+    background-color: black;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divAlpine{
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.h2FondoBlanco{
+    color: black;
+}
+.pFondoBlanco{
+    color: black;
+}
+.main__divMclaren{
+    background-color: #FF8000;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center
+}
+.logoMclaren{
+    width: 25vw;
+}
+.main__divAlfaromeo{
+    background-color: #a0273b;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divAstonmartin{
+    background-color: #0c5a51 ;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divHaas{
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divAlphatauri{
+    background-color: #02012e;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divWilliams{
+    background-color: black;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+@media(max-width:425px){
+    .main__divRedbull{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .logoMclaren{
+        width: 80vw;
+    }
+    .main__divFerrari{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+        
+    }
+    .main__divMercedes{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divAlpine{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divMclaren{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divAlfaromeo{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divAstonmartin{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divHaas{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divAlphatauri{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .main__divWilliams{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+}

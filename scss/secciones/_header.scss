@@ -1,0 +1,54 @@
+.logo{
+    width: 150px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Prosto One', cursive;
+}
+.header__menuNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 50px 20px;
+}
+.header__menuNav--activo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+header{
+    background-color: black;
+    height: 30vh;
+    border-bottom: 3px solid red;
+    
+}
+.headerNav{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@media(max-width:425px){
+    .headerNav{
+        display: flex;
+       flex-direction: column;
+       align-content: center;
+       justify-content: flex-start;
+    }
+    header{
+        height: 40vh;
+    }
+    li{
+        padding: 0px;
+        margin-left: 7px;
+        font-size: small;
+    }
+    .header__menuNav{
+        align-items: flex-start;
+    }
+}

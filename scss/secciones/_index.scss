@@ -1,0 +1,65 @@
+main{
+    background-color: black;
+}
+.main__imagenInicio{
+    width: 98.5vw;
+    object-fit: cover;
+    height: 80vh;
+   
+
+}
+h1{
+    font-family: 'Prosto One', cursive;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+p{
+    font-family: 'Prosto One', cursive;
+    color: white;
+}
+.imagen__f1Grid{
+    width: 45vw;
+    height: 65vh;
+    object-fit: cover;
+}
+.imagen__f1Podio{
+    width: 45vw;
+    height: 65vh;
+    object-fit: cover;
+}
+.textoCentrado{
+    text-align: center;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    padding: 3rem;
+   
+}
+.main_imagenesInicio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    height: 70vh;
+}
+@media(max-width:425px){
+    .main__imagenInicio{
+        width: 100vw;
+    }
+    .main_imagenesInicio{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        height: 80vh;
+    }
+    .imagen__f1Grid{
+        width: 100vw;
+        height: 38vh;
+        object-fit: cover;
+    }
+    .imagen__f1Podio{
+        width: 100vw;
+        height: 38vh;
+        object-fit: cover;
+    }
+}
