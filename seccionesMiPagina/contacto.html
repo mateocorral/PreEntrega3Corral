@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>CONTACTO</title>
@@ -22,6 +23,35 @@
                 <li class="scale"><a href="./contacto.html" class="header__menuNav--activo">CONTACTO</a></li>
             </ul>
         </nav>
+        <nav class="navbar bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../recursos/logoF1.png" alt="Logo F1" class="logo"></a>
+              <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link"  href="./historia.html">HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./escuderias.html">ESCUDERIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="./pilotos.html">PILOTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link header__menuNav--activo" href="./contacto.html">CONTACTO</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h1>FORMULARIO DE CONTACTO</h1>
@@ -85,6 +115,7 @@
             </ul>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 <script src="../js/wow.js"></script>
 <script>

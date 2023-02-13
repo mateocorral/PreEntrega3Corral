@@ -33,15 +33,21 @@ header{
    align-items: center;
    justify-content: space-between;
 }
+.nav-link{
+    color: white;
+}
+.navbar{
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 3px solid red;
+}
 @media(max-width:425px){
     .headerNav{
-        display: flex;
-       flex-direction: column;
-       align-content: center;
-       justify-content: flex-start;
+        display: none;
     }
     header{
-        height: 40vh;
+        height: 30vh;
+        border-bottom: none;
     }
     li{
         padding: 0px;
@@ -50,5 +56,10 @@ header{
     }
     .header__menuNav{
         align-items: flex-start;
+    }
+}
+@media(min-width:426px){
+    .navbar{
+        display:none
     }
 }

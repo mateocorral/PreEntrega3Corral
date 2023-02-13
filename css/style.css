@@ -31,20 +31,30 @@ header {
   align-items: center;
   justify-content: space-between; }
 
+.nav-link {
+  color: white; }
+
+.navbar {
+  width: 100vw;
+  height: 30vh;
+  border-bottom: 3px solid red; }
+
 @media (max-width: 425px) {
   .headerNav {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start; }
+    display: none; }
   header {
-    height: 40vh; }
+    height: 30vh;
+    border-bottom: none; }
   li {
     padding: 0px;
     margin-left: 7px;
     font-size: small; }
   .header__menuNav {
     align-items: flex-start; } }
+
+@media (min-width: 426px) {
+  .navbar {
+    display: none; } }
 
 main {
   background-color: black; }
@@ -53,6 +63,9 @@ main {
   width: 98.5vw;
   object-fit: cover;
   height: 80vh; }
+
+.carousel-item {
+  height: 90vh; }
 
 h1 {
   font-family: 'Prosto One', cursive;
@@ -81,20 +94,13 @@ p {
   padding: 3rem; }
 
 .main_imagenesInicio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
-  height: 70vh; }
+  text-align: center; }
 
 @media (max-width: 425px) {
   .main__imagenInicio {
     width: 100vw; }
-  .main_imagenesInicio {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: none;
-    height: 80vh; }
+  .carousel-item {
+    height: 50vh; }
   .imagen__f1Grid {
     width: 100vw;
     height: 38vh;
@@ -331,9 +337,7 @@ a {
   justify-content: space-around; }
 
 li {
-  display: inline-block;
-  margin-left: 50px;
-  padding: 50px 20px; }
+  display: inline-block; }
 
 .logoRedes {
   width: 75px; }
