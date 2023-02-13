@@ -52,8 +52,12 @@ header {
   .header__menuNav {
     align-items: flex-start; } }
 
-@media (min-width: 426px) {
+@media (min-width: 769px) {
   .navbar {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .headerNav {
     display: none; } }
 
 main {
@@ -104,7 +108,8 @@ p {
     object-fit: cover;
     padding: 0px; }
   .imagen-carousel {
-    height: 50vh; }
+    height: 50vh;
+    object-fit: cover; }
   .main_imagenesInicio {
     height: 50vh; }
   .imagen__f1Grid {
@@ -115,6 +120,10 @@ p {
     width: 100vw;
     height: 38vh;
     object-fit: cover; } }
+
+@media (max-width: 768px) {
+  .main__imagenInicio {
+    width: 100vw; } }
 
 .imagen__f1Senna {
   width: 98.5vw;

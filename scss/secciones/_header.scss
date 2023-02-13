@@ -58,8 +58,13 @@ header{
         align-items: flex-start;
     }
 }
-@media(min-width:426px){
+@media(min-width:769px){
     .navbar{
         display:none
+    }
+}
+@media(max-width:768px){
+    .headerNav{
+        display: none;
     }
 }

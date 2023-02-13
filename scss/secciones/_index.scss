@@ -62,6 +62,7 @@ p {
     }
     .imagen-carousel{
         height: 50vh;
+        object-fit: cover;
     }
     .main_imagenesInicio{
         height: 50vh;
@@ -77,5 +78,10 @@ p {
         width: 100vw;
         height: 38vh;
         object-fit: cover;
+    }
+}
+@media(max-width:768px){
+    .main__imagenInicio {
+        width: 100vw;
     }
 }
