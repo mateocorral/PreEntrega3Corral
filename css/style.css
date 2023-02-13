@@ -101,7 +101,8 @@ p {
     width: 100vw; }
   .carousel-item {
     height: 50vh;
-    object-fit: cover; }
+    object-fit: cover;
+    padding: 0px; }
   .main_imagenesInicio {
     height: 50vh; }
   .imagen__f1Grid {
