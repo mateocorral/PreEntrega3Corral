@@ -103,6 +103,8 @@ p {
     height: 50vh;
     object-fit: cover;
     padding: 0px; }
+  .imagen-carousel {
+    height: 50vh; }
   .main_imagenesInicio {
     height: 50vh; }
   .imagen__f1Grid {

@@ -49,6 +49,7 @@ p {
     text-align: center;
 }
 
+
 @media(max-width:425px) {
 
     .main__imagenInicio {
@@ -58,6 +59,9 @@ p {
         height: 50vh;
         object-fit: cover;
         padding: 0px;
+    }
+    .imagen-carousel{
+        height: 50vh;
     }
     .main_imagenesInicio{
         height: 50vh;
