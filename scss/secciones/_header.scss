@@ -28,6 +28,9 @@ header{
     .nav-link{
         color: white;
     }
+    .logo{
+        width: 150px;
+    }
 }
 @media(max-width:425px){
     .headerNav{
@@ -36,9 +39,6 @@ header{
     header{
         height: 30vh;
         border-bottom: none;
-        .header__menuNav{
-            align-items: flex-start;
-        }
     }
         
     li{

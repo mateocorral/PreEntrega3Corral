@@ -1,5 +1,5 @@
-.main__divRedbull{
-    background-color: #08122b;
+@mixin div_escuderias($fondo){
+    background-color:$fondo;
     display: grid;
     grid-template-columns:repeat(2,1fr) ;
     align-items: center;
@@ -7,152 +7,48 @@
     padding: 1.5rem;
     border:3px solid black;
     text-align: center;
+}
+.main__divRedbull{
+    @include div_escuderias($colorRedbull) 
 }
 
 .main__divFerrari{
-    background-color: #EF1A2D;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias($colorFerrari)
 }
 .main__divMercedes{
-    background-color: black;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias(black)
 }
 .main__divAlpine{
-    background-color: white;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias(white)
 }
 .main__divMclaren{
-    background-color: #FF8000;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center
+    @include div_escuderias($colorMclaren)
 }
 .logoMclaren{
     width: 25vw;
 }
 .main__divAlfaromeo{
-    background-color: #a0273b;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias($colorAlfaromeo)
 }
 .main__divAstonmartin{
-    background-color: #0c5a51 ;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias($colorAstonmartin)
 }
 .main__divHaas{
-    background-color: white;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias(white)
 }
 .main__divAlphatauri{
-    background-color: #02012e;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias($colorAlphatauri)
 }
 .main__divWilliams{
-    background-color: black;
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
-    align-items: center;
-    justify-items: center;
-    padding: 1.5rem;
-    border:3px solid black;
-    text-align: center;
+    @include div_escuderias(black)
 }
 @media(max-width:425px){
-    .main__divRedbull{
+    .escuderiasMobile{
         grid-template-columns: none;
         grid-template-rows: repeat(2,1fr);
     }
     .logoMclaren{
         width: 80vw;
     }
-    .main__divFerrari{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-        
-    }
-    .main__divMercedes{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divAlpine{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divMclaren{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divAlfaromeo{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divAstonmartin{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divHaas{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divAlphatauri{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
-    .main__divWilliams{
-        grid-template-columns: none;
-        grid-template-rows: repeat(2,1fr);
-
-    }
+    
 }
