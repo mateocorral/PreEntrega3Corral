@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prosto+One&display=swap');
-@import "./secciones/header";
-@import "./secciones/index";
-@import "./secciones/historia";
-@import "./secciones/escuderias";
-@import "./secciones/pilotos";
-@import "./secciones/contacto";
-@import "./secciones/footer";
-*{
-    margin: 0;
-    padding: 0;
-}
+@import'./utilidades/reset';
+@import'./utilidades/colors';
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/historia';
+@import './secciones/escuderias';
+@import './secciones/pilotos';
+@import './secciones/contacto';
+@import './secciones/footer';
+@import'./secciones/estiloCompartido';
 

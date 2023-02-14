@@ -1,0 +1,65 @@
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Prosto One', cursive;
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 50px 20px;
+}
+main {
+    background-color: black;
+}
+h1 {
+    font-family: 'Prosto One', cursive;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Prosto One', cursive;
+    color: white;
+    .pFondoBlanco{
+        color: black;
+    }
+    
+}
+.textoCentrado {
+    text-align: center;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    padding: 3rem;
+
+}
+h2{
+    font-family: 'Prosto One', cursive;
+    color: white;
+    .h2FondoBlanco{
+        color: black;
+    }
+}
+.h2FondoBlanco{
+    color: black;
+}
+.pFondoBlanco{
+    color: black;
+}
+h3{
+    color: white;
+    font-family: 'Prosto One', cursive;
+    font-size:x-large;
+    .h3Fondoblanco{
+        color: black;
+    }
+}
+
+@media(max-width:425px){
+    li{
+        padding: 0px;
+        margin-left: 7px;
+        font-size: small;
+    }
+   
+}

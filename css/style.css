@@ -1,43 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Prosto+One&display=swap");
-.logo {
-  width: 150px; }
-
-a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Prosto One', cursive; }
-
-.header__menuNav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
-li {
-  display: inline-block;
-  margin-left: 50px;
-  padding: 50px 20px; }
-
-.header__menuNav--activo {
-  font-weight: bold;
-  text-decoration: underline; }
+* {
+  margin: 0;
+  padding: 0; }
 
 header {
   background-color: black;
   height: 30vh;
   border-bottom: 3px solid red; }
-
-.headerNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
-.nav-link {
-  color: white; }
+  header .headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .logo {
+    width: 150px; }
+  header .header__menuNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  header .header__menuNav--activo {
+    font-weight: bold;
+    text-decoration: underline; }
 
 .navbar {
   width: 100vw;
   height: 30vh;
   border-bottom: 3px solid red; }
+  .navbar .nav-link {
+    color: white; }
 
 @media (max-width: 425px) {
   .headerNav {
@@ -45,12 +34,12 @@ header {
   header {
     height: 30vh;
     border-bottom: none; }
+    header .header__menuNav {
+      align-items: flex-start; }
   li {
     padding: 0px;
     margin-left: 7px;
-    font-size: small; }
-  .header__menuNav {
-    align-items: flex-start; } }
+    font-size: small; } }
 
 @media (min-width: 769px) {
   .navbar {
@@ -60,66 +49,28 @@ header {
   .headerNav {
     display: none; } }
 
-main {
-  background-color: black; }
-
 .main__imagenInicio {
   width: 98.5vw;
   object-fit: cover;
   height: 80vh; }
 
-.carousel-item {
-  height: 90vh; }
-
-h1 {
-  font-family: 'Prosto One', cursive;
-  color: white;
-  text-align: center;
-  padding: 1rem; }
-
-p {
-  font-family: 'Prosto One', cursive;
-  color: white; }
-
-.imagen__f1Grid {
-  width: 45vw;
-  height: 65vh;
-  object-fit: cover; }
-
-.imagen__f1Podio {
-  width: 45vw;
-  height: 65vh;
-  object-fit: cover; }
-
-.textoCentrado {
-  text-align: center;
-  border-bottom: 2px solid red;
-  border-top: 2px solid red;
-  padding: 3rem; }
-
 .main_imagenesInicio {
   text-align: center; }
+  .main_imagenesInicio .carousel-item {
+    height: 90vh; }
 
 @media (max-width: 425px) {
   .main__imagenInicio {
     width: 100vw; }
-  .carousel-item {
-    height: 50vh;
-    object-fit: cover;
-    padding: 0px; }
-  .imagen-carousel {
-    height: 50vh;
-    object-fit: cover; }
   .main_imagenesInicio {
     height: 50vh; }
-  .imagen__f1Grid {
-    width: 100vw;
-    height: 38vh;
-    object-fit: cover; }
-  .imagen__f1Podio {
-    width: 100vw;
-    height: 38vh;
-    object-fit: cover; } }
+    .main_imagenesInicio .carousel-item {
+      height: 50vh;
+      object-fit: cover;
+      padding: 0px; }
+      .main_imagenesInicio .carousel-item .imagen-carousel {
+        height: 50vh;
+        object-fit: cover; } }
 
 @media (max-width: 768px) {
   .main__imagenInicio {
@@ -134,21 +85,20 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem; }
-
-.imagen__f1Historia {
-  width: 31vw;
-  height: 40vh;
-  object-fit: cover; }
+  .imagenes__Historia .imagen__f1Historia {
+    width: 31vw;
+    height: 40vh;
+    object-fit: cover; }
 
 @media (max-width: 425px) {
-  .imagen__f1Historia {
-    width: 100vw;
-    margin-bottom: 1rem; }
   .imagenes__Historia {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: none;
-    padding: 0; } }
+    padding: 0; }
+    .imagenes__Historia .imagen__f1Historia {
+      width: 100vw;
+      margin-bottom: 1rem; } }
 
 .main__divRedbull {
   background-color: #08122b;
@@ -159,10 +109,6 @@ p {
   padding: 1.5rem;
   border: 3px solid black;
   text-align: center; }
-
-h2 {
-  font-family: 'Prosto One', cursive;
-  color: white; }
 
 .main__divFerrari {
   background-color: #EF1A2D;
@@ -193,12 +139,6 @@ h2 {
   padding: 1.5rem;
   border: 3px solid black;
   text-align: center; }
-
-.h2FondoBlanco {
-  color: black; }
-
-.pFondoBlanco {
-  color: black; }
 
 .main__divMclaren {
   background-color: #FF8000;
@@ -297,19 +237,11 @@ h2 {
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr); } }
 
-h3 {
-  color: white;
-  font-family: 'Prosto One', cursive;
-  font-size: x-large; }
-
 .img__f1Pilotos2023 {
   width: 20vw;
   height: 15vw;
   object-fit: cover;
   border-radius: 50%; }
-
-.h3Fondoblanco {
-  color: black; }
 
 form {
   display: grid;
@@ -342,36 +274,85 @@ textarea {
   height: 15vh;
   background-color: #323232; }
 
-a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Prosto One', cursive; }
-
 .footer__listaRedes {
   display: flex;
   justify-content: space-around; }
-
-li {
-  display: inline-block; }
 
 .logoRedes {
   width: 75px; }
 
 footer {
   background-color: red; }
+  footer .footer__listaRedes {
+    display: flex;
+    justify-content: space-around; }
+    footer .footer__listaRedes .logoRedes {
+      width: 75px; }
 
 @media (max-width: 425px) {
-  .logoRedes {
-    width: 50px;
-    height: 2rem; }
   footer {
     height: 20vh; }
-  .footer__listaRedes {
-    display: flex;
-    justify-content: space-around;
-    height: 18vh;
-    align-items: center; } }
+    footer .footer__listaRedes {
+      display: flex;
+      justify-content: space-around;
+      height: 18vh;
+      align-items: center; }
+      footer .footer__listaRedes .logoRedes {
+        width: 50px;
+        height: 2rem; } }
 
-* {
-  margin: 0;
-  padding: 0; }
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Prosto One', cursive; }
+
+li {
+  display: inline-block;
+  margin-left: 50px;
+  padding: 50px 20px; }
+
+main {
+  background-color: black; }
+
+h1 {
+  font-family: 'Prosto One', cursive;
+  color: white;
+  text-align: center;
+  padding: 1rem; }
+
+p {
+  font-family: 'Prosto One', cursive;
+  color: white; }
+  p .pFondoBlanco {
+    color: black; }
+
+.textoCentrado {
+  text-align: center;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  padding: 3rem; }
+
+h2 {
+  font-family: 'Prosto One', cursive;
+  color: white; }
+  h2 .h2FondoBlanco {
+    color: black; }
+
+.h2FondoBlanco {
+  color: black; }
+
+.pFondoBlanco {
+  color: black; }
+
+h3 {
+  color: white;
+  font-family: 'Prosto One', cursive;
+  font-size: x-large; }
+  h3 .h3Fondoblanco {
+    color: black; }
+
+@media (max-width: 425px) {
+  li {
+    padding: 0px;
+    margin-left: 7px;
+    font-size: small; } }
